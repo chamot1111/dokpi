@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -f unittest ]; then
+  echo "unittest"
+  exit 0
+fi
+
+exit 1

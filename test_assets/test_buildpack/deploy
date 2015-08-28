@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "deploy"
+sleep 2
+echo "end server"
