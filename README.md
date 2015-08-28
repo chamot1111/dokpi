@@ -3,6 +3,12 @@ When you push a new repository, it deploy automatically.
 
 WARNING: Very early stage
 
+Test
+----
+Run this command in a docker command line
+
+    docker build -t dokpi ./ && clear && docker run dokpi
+
 Licence
 -------
 MIT

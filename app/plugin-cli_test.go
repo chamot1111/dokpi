@@ -36,15 +36,15 @@ func TestAddPlugin(t *testing.T) {
 	if err != nil {
 		t.Error("Add plugin error: ", err)
 	}
-	if !folderFileExists(PluginFolder) {
+	if !FolderFileExists(PluginFolder) {
 		t.Error("the plugin folder doesn't exists ", PluginFolder)
 	}
 	dokpiFolder := path.Join(PluginFolder, "hello")
-	if !folderFileExists(dokpiFolder) {
+	if !FolderFileExists(dokpiFolder) {
 		t.Error("the plugin folder doesn't exists ", dokpiFolder)
 	}
 	installScriptPath := path.Join(dokpiFolder, ExeInstall)
-	if !folderFileExists(installScriptPath) {
+	if !FolderFileExists(installScriptPath) {
 		t.Error("the install script doesn't exists ", installScriptPath)
 	}
 }

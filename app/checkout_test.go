@@ -16,7 +16,7 @@ func TestCreateTmpFolder(t *testing.T) {
 	if !strings.HasPrefix(path.Base(folderPath), expectedName) {
 		t.Error("expected prefix is ", expectedName, " got: ", folderPath)
 	}
-	if !folderFileExists(folderPath) {
+	if !FolderFileExists(folderPath) {
 		t.Error("The folder has not been created")
 	}
 }
@@ -26,7 +26,7 @@ func TestCheckoutToTmp(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
-	if !folderFileExists(destinationFolder + "/unittest") {
+	if !FolderFileExists(destinationFolder + "/unittest") {
 		t.Error("git repo has not been cloned")
 	}
 }
